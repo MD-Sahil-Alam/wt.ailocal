@@ -10,9 +10,6 @@ const whatsapp = new Client({
 const openaiApiKey = process.env.OPENAI_KEY;
 const openai = new OpenAI({ apiKey: openaiApiKey });
 
-whatsapp.on('qr', (qr) => {
-    qrcode.generate(qr, { small: true });
-});
 
 whatsapp.on('message', async (msg) => {
     if (msg.body.charAt(0) === '/') {
