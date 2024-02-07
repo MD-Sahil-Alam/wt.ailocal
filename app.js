@@ -8,7 +8,7 @@ const server = http.createServer((req, res) => {
   res.end('Hello, World!');
 });
 
-const PORT =  60640;
+const PORT = 64840;
 
 server.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
@@ -46,8 +46,17 @@ whatsapp.on('message', async (msg) => {
     }
 });
 
-whatsapp.on('ready', () => {
+whatsapp.on('ready', async () => {
     console.log('WhatsApp client is ready!');
+     // Send keep alive message to the group periodically
+     setInterval(async () => {
+        try {
+            await whatsapp.sendMessage('120363232530747153@g.us', 'we are working');
+            console.log('Keep alive message sent to group');
+        } catch (error) {
+            console.error('Error sending keep alive message:', error);
+        }
+    }, 10 * 60 * 1000); // Send a message every 10 minutes
 });
 
 whatsapp.initialize();
