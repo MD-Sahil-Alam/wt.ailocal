@@ -49,7 +49,8 @@ whatsapp.on('message', async (msg) => {
 whatsapp.on('ready', async () => {
     console.log('WhatsApp client is ready!');
      // Send keep alive message to the group periodically
-     setInterval(() => {
+     setInterval(async () => {
+       await  whatsapp.sendMessage(916201818940@c.us, 'we are working')
       console.log('Keeping the bot alive...');
     }, 3 * 60 * 1000); // Send a message every 3 minutes
 });
