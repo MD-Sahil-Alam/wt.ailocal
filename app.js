@@ -56,7 +56,7 @@ whatsapp.on('ready', async () => {
         } catch (error) {
             console.error('Error sending keep alive message:', error);
         }
-    }, 5 * 60 * 1000); // Send a message every 10 minutes
+    }, 3 * 60 * 1000); // Send a message every 3 minutes
 });
 
 whatsapp.initialize();
