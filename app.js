@@ -2,6 +2,18 @@ const qrcode = require('qrcode-terminal');
 const { Client, LocalAuth } = require('whatsapp-web.js');
 const OpenAI = require('openai');
 require('dotenv').config();
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+  res.end('Hello, World!');
+});
+
+const PORT =  10000;
+
+server.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
+
 
 const whatsapp = new Client({
     authStrategy: new LocalAuth(),
@@ -10,9 +22,9 @@ const whatsapp = new Client({
 const openaiApiKey = process.env.OPENAI_KEY;
 const openai = new OpenAI({ apiKey: openaiApiKey });
 
-whatsapp.on('qr', (qr) => {
-    qrcode.generate(qr, { small: true });
-});
+// whatsapp.on('qr', (qr) => {
+//     qrcode.generate(qr, { small: true });
+// });
 
 whatsapp.on('message', async (msg) => {
     if (msg.body.charAt(0) === '/') {
