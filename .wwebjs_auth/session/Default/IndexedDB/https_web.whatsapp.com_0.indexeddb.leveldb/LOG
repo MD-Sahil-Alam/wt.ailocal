@@ -1,19 +1,18 @@
-2024/02/08-07:20:38.449 548 Reusing MANIFEST C:\Users\sahil\OneDrive\Desktop\tr.ai\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2024/02/08-07:20:38.449 548 Recovering log #242
-2024/02/08-07:20:38.449 548 Reusing old log C:\Users\sahil\OneDrive\Desktop\tr.ai\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000242.log 
-2024/02/08-07:20:39.437 2510 Compacting 1@1 + 6@2 files
-2024/02/08-07:20:39.505 2510 Generated table #245@1: 55140 keys, 2288584 bytes
-2024/02/08-07:20:39.548 2510 Generated table #246@1: 19170 keys, 2172864 bytes
-2024/02/08-07:20:39.577 2510 Generated table #247@1: 7087 keys, 2160116 bytes
-2024/02/08-07:20:39.623 2510 Generated table #248@1: 25757 keys, 2229332 bytes
-2024/02/08-07:20:39.683 2510 Generated table #249@1: 78953 keys, 2221990 bytes
-2024/02/08-07:20:39.718 2510 Generated table #250@1: 42929 keys, 948032 bytes
-2024/02/08-07:20:39.718 2510 Compacted 1@1 + 6@2 files => 12020918 bytes
-2024/02/08-07:20:39.718 2510 compacted to: files[ 0 0 6 0 0 0 0 ]
-2024/02/08-07:20:39.718 2510 Delete type=2 #235
-2024/02/08-07:20:39.718 2510 Delete type=2 #236
-2024/02/08-07:20:39.718 2510 Delete type=2 #237
-2024/02/08-07:20:39.718 2510 Delete type=2 #238
-2024/02/08-07:20:39.718 2510 Delete type=2 #239
-2024/02/08-07:20:39.718 2510 Delete type=2 #240
-2024/02/08-07:20:39.718 2510 Delete type=2 #243
+2024/02/08-09:43:51.196 25d4 Reusing MANIFEST C:\Users\sahil\OneDrive\Desktop\tr.ai\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/02/08-09:43:51.196 25d4 Recovering log #115
+2024/02/08-09:43:51.202 25d4 Reusing old log C:\Users\sahil\OneDrive\Desktop\tr.ai\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000115.log 
+2024/02/08-10:06:13.284 8cc Level-0 table #124: started
+2024/02/08-10:06:13.341 8cc Level-0 table #124: 1263478 bytes OK
+2024/02/08-10:06:13.344 8cc Delete type=0 #115
+2024/02/08-10:06:36.039 8cc Compacting 1@1 + 4@2 files
+2024/02/08-10:06:36.200 8cc Generated table #125@1: 46164 keys, 2217331 bytes
+2024/02/08-10:06:36.260 8cc Generated table #126@1: 2834 keys, 2153059 bytes
+2024/02/08-10:06:36.388 8cc Generated table #127@1: 25400 keys, 2230270 bytes
+2024/02/08-10:06:36.563 8cc Generated table #128@1: 70377 keys, 2106959 bytes
+2024/02/08-10:06:36.563 8cc Compacted 1@1 + 4@2 files => 8707619 bytes
+2024/02/08-10:06:36.564 8cc compacted to: files[ 0 0 4 0 0 0 0 ]
+2024/02/08-10:06:36.564 8cc Delete type=2 #118
+2024/02/08-10:06:36.565 8cc Delete type=2 #119
+2024/02/08-10:06:36.565 8cc Delete type=2 #120
+2024/02/08-10:06:36.565 8cc Delete type=2 #121
+2024/02/08-10:06:36.565 8cc Delete type=2 #124
