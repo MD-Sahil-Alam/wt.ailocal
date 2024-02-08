@@ -35,8 +35,8 @@ const initializeWhatsApp = async () => {
 
         // Handle incoming messages
         whatsapp.on('message', async (msg) => {
-            if (msg.body.charAt(0) === '.') {
-                msg.reply("Please wait for few seconds...");
+            if (msg.body.charAt(0) === '/') {
+                msg.reply("Please wait for a few seconds...");
                 try {
                     const query = msg.body.substring(1);
                     const completion = await openai.chat.completions.create({
@@ -84,8 +84,8 @@ const initializeWhatsApp = async () => {
             console.log('WhatsApp client is ready!');
         };
 
-            // Restart WhatsApp client every 7 minutes
-            setInterval(restartWhatsApp, 7 * 60 * 1000);
+        // Restart WhatsApp client every 7 minutes
+        // setInterval(restartWhatsApp, 7 * 60 * 1000);
 
     } catch (error) {
         console.error('An error occurred during WhatsApp client initialization:', error);
