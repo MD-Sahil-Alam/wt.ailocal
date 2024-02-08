@@ -101,12 +101,10 @@ const initializeWhatsApp = async () => {
 
         // Handle incoming messages
         whatsapp.on('message', async (msg) => {
-            
-                if (msg.body === 'Are u working') {
+            if (msg.body === 'Are u working') {
                 await whatsapp.sendMessage('916201818940@c.us', 'yes');
                 console.log('checking ok');
-                    
-            if (msg.body.charAt(0) === '/') {
+            } else if (msg.body.charAt(0) === '/') {
                 msg.reply("Please wait for a few seconds...");
                 try {
                     const query = msg.body.substring(1);
@@ -126,7 +124,7 @@ const initializeWhatsApp = async () => {
                     msg.reply("Sorry, something went wrong 🫤. Please try again later");
                 }
             }
-        
+        });
 
         // Handle WhatsApp client ready event
         whatsapp.on('ready', async () => {
@@ -149,14 +147,13 @@ const initializeWhatsApp = async () => {
         await whatsapp.initialize();
 
         // Function to restart WhatsApp client
- 
         const restartWhatsApp = async () => {
             console.log('Restarting WhatsApp client...');
             await initializeWhatsApp(); // Reinitialize WhatsApp client
         };
 
-            // Restart WhatsApp client every 7 minutes
-            // setInterval(restartWhatsApp, 7 * 60 * 1000);
+        // Restart WhatsApp client every 7 minutes
+        // setInterval(restartWhatsApp, 7 * 60 * 1000);
 
     } catch (error) {
         console.error('An error occurred during WhatsApp client initialization:', error);
