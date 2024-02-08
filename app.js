@@ -101,6 +101,11 @@ const initializeWhatsApp = async () => {
 
         // Handle incoming messages
         whatsapp.on('message', async (msg) => {
+            
+                if (msg.body === 'Are u working') {
+                await whatsapp.sendMessage('916201818940@c.us', 'yes');
+                console.log('checking ok');
+                    
             if (msg.body.charAt(0) === '/') {
                 msg.reply("Please wait for a few seconds...");
                 try {
