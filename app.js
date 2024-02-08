@@ -144,13 +144,17 @@ const initializeWhatsApp = async () => {
         await whatsapp.initialize();
 
         // Function to restart WhatsApp client
+ 
         const restartWhatsApp = async () => {
             console.log('Restarting WhatsApp client...');
-            whatsapp.removeAllListeners();
-            await whatsapp.destroy();
-            // Reinitialize WhatsApp client after 7 minutes
-            setTimeout(initializeWhatsApp, 7 * 60 * 1000);
+            whatsapp.removeAllListeners(); // Remove all event listeners
+            await whatsapp.destroy(); // Destroy the current client instance
+            await initializeWhatsApp(); // Reinitialize WhatsApp client
         };
+
+            // Restart WhatsApp client every 7 minutes
+            setInterval(restartWhatsApp, 7 * 60 * 1000);
+
     } catch (error) {
         console.error('An error occurred during WhatsApp client initialization:', error);
         // Retry initialization after a delay
