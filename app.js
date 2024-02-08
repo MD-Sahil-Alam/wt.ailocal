@@ -147,8 +147,6 @@ const initializeWhatsApp = async () => {
  
         const restartWhatsApp = async () => {
             console.log('Restarting WhatsApp client...');
-            whatsapp.removeAllListeners(); // Remove all event listeners
-            await whatsapp.destroy(); // Destroy the current client instance
             await initializeWhatsApp(); // Reinitialize WhatsApp client
         };
 
