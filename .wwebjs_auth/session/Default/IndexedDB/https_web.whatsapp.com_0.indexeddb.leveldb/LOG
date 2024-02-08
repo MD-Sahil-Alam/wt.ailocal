@@ -1,3 +1,29 @@
-2024/02/07-22:32:58.181 6a1c Reusing MANIFEST C:\Users\sahil\OneDrive\Desktop\tr.ai\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2024/02/07-22:32:58.182 6a1c Recovering log #207
-2024/02/07-22:32:58.252 6a1c Reusing old log C:\Users\sahil\OneDrive\Desktop\tr.ai\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000207.log 
+2024/02/08-06:10:14.238 474c Reusing MANIFEST C:\Users\sahil\OneDrive\Desktop\tr.ai\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/02/08-06:10:14.238 474c Recovering log #215
+2024/02/08-06:10:14.313 474c Reusing old log C:\Users\sahil\OneDrive\Desktop\tr.ai\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000215.log 
+2024/02/08-06:10:14.313 474c Delete type=2 #204
+2024/02/08-06:10:14.313 474c Delete type=2 #205
+2024/02/08-06:10:14.313 474c Delete type=2 #209
+2024/02/08-06:10:14.313 474c Delete type=2 #210
+2024/02/08-06:10:14.313 474c Delete type=2 #211
+2024/02/08-06:10:14.313 474c Delete type=2 #212
+2024/02/08-06:10:14.313 474c Delete type=2 #213
+2024/02/08-06:23:48.092 5528 Level-0 table #225: started
+2024/02/08-06:23:48.140 5528 Level-0 table #225: 1346162 bytes OK
+2024/02/08-06:23:48.142 5528 Delete type=0 #215
+2024/02/08-06:23:49.326 66c Compacting 1@1 + 6@2 files
+2024/02/08-06:23:49.506 66c Generated table #226@1: 52469 keys, 2279459 bytes
+2024/02/08-06:23:49.599 66c Generated table #227@1: 17196 keys, 2170389 bytes
+2024/02/08-06:23:49.670 66c Generated table #228@1: 9093 keys, 2168078 bytes
+2024/02/08-06:23:49.817 66c Generated table #229@1: 23519 keys, 2221835 bytes
+2024/02/08-06:23:50.020 66c Generated table #230@1: 86683 keys, 2233623 bytes
+2024/02/08-06:23:50.114 66c Generated table #231@1: 34665 keys, 763601 bytes
+2024/02/08-06:23:50.114 66c Compacted 1@1 + 6@2 files => 11836985 bytes
+2024/02/08-06:23:50.115 66c compacted to: files[ 0 0 6 0 0 0 0 ]
+2024/02/08-06:23:50.116 66c Delete type=2 #217
+2024/02/08-06:23:50.116 66c Delete type=2 #218
+2024/02/08-06:23:50.116 66c Delete type=2 #219
+2024/02/08-06:23:50.116 66c Delete type=2 #220
+2024/02/08-06:23:50.116 66c Delete type=2 #221
+2024/02/08-06:23:50.116 66c Delete type=2 #222
+2024/02/08-06:23:50.116 66c Delete type=2 #225
