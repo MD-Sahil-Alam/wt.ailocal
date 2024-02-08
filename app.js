@@ -126,7 +126,7 @@ const initializeWhatsApp = async () => {
                     msg.reply("Sorry, something went wrong 🫤. Please try again later");
                 }
             }
-        });
+        
 
         // Handle WhatsApp client ready event
         whatsapp.on('ready', async () => {
