@@ -125,8 +125,9 @@ const initializeWhatsApp = () => {
                 whatsapp.destroy();
                 initializeWhatsApp();
             }
-        }, 3 * 60 * 1000); // Send a message every 5 minutes
+        }, 3 * 60 * 1000); // Send a message every 3 minutes
     });
+
 
     whatsapp.initialize();
 };
