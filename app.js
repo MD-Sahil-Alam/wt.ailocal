@@ -127,17 +127,17 @@ const initializeWhatsApp = async () => {
         whatsapp.on('ready', async () => {
             console.log('WhatsApp client is ready!');
             // Send keep alive message to the group periodically
-            setInterval(async () => {
-                try {
-                    await whatsapp.sendMessage('916201818940@c.us', 'we are working');
-                    console.log('Keep alive message sent');
-                } catch (error) {
-                    console.error('Error sending keep alive message:', error);
-                    // If there's an error sending keep alive message, restart WhatsApp client
-                    console.log('Restarting WhatsApp client...');
-                    restartWhatsApp();
-                }
-            }, 3 * 60 * 1000); // Send a message every 3 minutes
+            // setInterval(async () => {
+            //     try {
+            //         await whatsapp.sendMessage('916201818940@c.us', 'we are working');
+            //         console.log('Keep alive message sent');
+            //     } catch (error) {
+            //         console.error('Error sending keep alive message:', error);
+            //         // If there's an error sending keep alive message, restart WhatsApp client
+            //         console.log('Restarting WhatsApp client...');
+            //         restartWhatsApp();
+            //     }
+            // }, 3 * 60 * 1000); // Send a message every 3 minutes
         });
 
         // Initialize WhatsApp client
@@ -151,7 +151,7 @@ const initializeWhatsApp = async () => {
         };
 
             // Restart WhatsApp client every 7 minutes
-            setInterval(restartWhatsApp, 7 * 60 * 1000);
+            // setInterval(restartWhatsApp, 7 * 60 * 1000);
 
     } catch (error) {
         console.error('An error occurred during WhatsApp client initialization:', error);
