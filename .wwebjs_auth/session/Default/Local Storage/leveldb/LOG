@@ -1,3 +1,2 @@
-2024/02/08-12:31:53.564 7ac Reusing MANIFEST C:\Users\sahil\OneDrive\Desktop\tr.ai\.wwebjs_auth\session\Default\Local Storage\leveldb/MANIFEST-000001
-2024/02/08-12:31:53.565 7ac Recovering log #3
-2024/02/08-12:31:53.565 7ac Reusing old log C:\Users\sahil\OneDrive\Desktop\tr.ai\.wwebjs_auth\session\Default\Local Storage\leveldb/000003.log 
+2024/02/08-20:30:35.455 391c Creating DB C:\Users\sahil\OneDrive\Desktop\tr.ai\.wwebjs_auth\session\Default\Local Storage\leveldb since it was missing.
+2024/02/08-20:30:35.463 391c Reusing MANIFEST C:\Users\sahil\OneDrive\Desktop\tr.ai\.wwebjs_auth\session\Default\Local Storage\leveldb/MANIFEST-000001
