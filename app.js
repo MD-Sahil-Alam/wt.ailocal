@@ -77,15 +77,14 @@ server.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
 
-// Initialize OpenAI
-const openaiApiKey = process.env.OPENAI_KEY;
-const openai = new OpenAI({ apiKey: openaiApiKey });
-
 // Function to initialize WhatsApp client
 const initializeWhatsApp = () => {
     const whatsapp = new Client({
         authStrategy: new LocalAuth(),
     });
+
+const openaiApiKey = process.env.OPENAI_KEY;
+const openai = new OpenAI({ apiKey: openaiApiKey });
 
     whatsapp.on('message', async (msg) => {
         if (msg.body.charAt(0) === '/') {
@@ -115,7 +114,7 @@ const initializeWhatsApp = () => {
         // Send keep alive message to the group periodically
         setInterval(async () => {
             try {
-                await whatsapp.sendMessage('916201818940@c.us', 'we are working');
+                await whatsapp.sendMessage('916201818940@g.us', 'we are working');
                 console.log('Keep alive message sent');
             } catch (error) {
                 console.error('Error sending keep alive message:', error);
@@ -125,11 +124,20 @@ const initializeWhatsApp = () => {
                 whatsapp.destroy();
                 initializeWhatsApp();
             }
-        }, 3 * 60 * 1000); // Send a message every 3 minutes
-    });
+        }, 3 * 60 * 1000); // Send a message every 2 minutes
 
+        // Reinitialize WhatsApp client every 3 minutes
+        setTimeout(() => {
+            console.log('Reinitializing WhatsApp client...');
+            whatsapp.removeListener('ready', initializeWhatsApp);
+            whatsapp.destroy();
+            initializeWhatsApp();
+        }, 8 * 60 * 1000);
+    });
 
     whatsapp.initialize();
 };
-// Call the function to initialize WhatsApp client
+
+// Initialize WhatsApp client
 initializeWhatsApp();
+
